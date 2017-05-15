@@ -1,0 +1,9 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.lucasbt.laboratorio</groupId>
+	<artifactId>dinamizacao-enum</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<name>Laboratorio - Dinamização de Enum (extensão, sobrecarga, etc)</name>
+	<description>Projeto para testes de soluções para extensões, sobrecargas, visibilidade em enums ou type safe enums.</description>
+</project>
