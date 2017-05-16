@@ -1,6 +1,6 @@
-package com.lucasbt.laboratorio.enums.enumsdirect;
+package com.lucasbt.laboratorio.dinamizacaoenums.enums;
 
-import com.lucasbt.laboratorio.enums.typesafe.TipoConta;
+import com.lucasbt.laboratorio.dinamizacaoenums.TipoConta;
 
 public class Main {
 

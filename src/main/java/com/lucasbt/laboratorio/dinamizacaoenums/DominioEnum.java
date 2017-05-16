@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.lucasbt.laboratorio.enums;
+package com.lucasbt.laboratorio.dinamizacaoenums;
 
 import java.io.Serializable;
 
@@ -10,9 +10,9 @@ import java.io.Serializable;
  * 
  * @author lucas
  */
-public interface DominioEnum<VALOR> extends Serializable {
+public interface DominioEnum<T> extends Serializable {
 
-	VALOR getValor();
+	T getValor();
 
 	String getNome();
 
