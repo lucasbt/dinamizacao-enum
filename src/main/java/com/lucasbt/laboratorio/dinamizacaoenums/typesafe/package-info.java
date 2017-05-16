@@ -3,4 +3,4 @@
  * 
  * @author lucas
  */
-package com.lucasbt.laboratorio.enums.typesafe;
+package com.lucasbt.laboratorio.dinamizacaoenums.typesafe;

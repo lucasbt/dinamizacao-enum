@@ -1,7 +1,8 @@
 
-package com.lucasbt.laboratorio.enums.typesafe;
+package com.lucasbt.laboratorio.dinamizacaoenums.typesafe;
 
-import com.lucasbt.laboratorio.enums.AbstractDominioEnum;
+import com.lucasbt.laboratorio.dinamizacaoenums.AbstractDominioEnum;
+import com.lucasbt.laboratorio.dinamizacaoenums.TipoConta;
 
 /**
  * Descrição do Fonte
@@ -9,46 +10,51 @@ import com.lucasbt.laboratorio.enums.AbstractDominioEnum;
  * @author <Mês por extenso>/2017: <Nome Completo do Implementador>
  *         <DD>
  */
-public class TipoContaImpl extends AbstractDominioEnum<Integer> implements TipoConta<Integer> {
+public class TipoContaImpl extends AbstractDominioEnum<Integer> implements TipoConta<Integer>
+{
 
-	private static final long serialVersionUID = 1L;
-	public static final TipoConta<?> CORRENTE = new TipoContaImpl(1, "Conta Corrente");
-	public static final TipoConta<?> POUPANCA = new TipoContaImpl(2, "Conta Poupança");
-	public static final TipoConta<?> SALARIO = new TipoContaImpl(3, "Conta Salário");
+   private static final long serialVersionUID = 1L;
+   public static final TipoConta<Integer> CORRENTE = new TipoContaImpl(1, "Conta Corrente");
+   public static final TipoConta<Integer> POUPANCA = new TipoContaImpl(2, "Conta Poupança");
+   public static final TipoConta<Integer> SALARIO = new TipoContaImpl(3, "Conta Salário");
 
-	protected TipoContaImpl(Integer valor, String nome) {
-		super(valor,nome);
-	}
+   protected TipoContaImpl(Integer valor, String nome)
+   {
+      super(valor, nome);
+   }
 
-	/**
-	 * (Ver Javadoc da super classe)
-	 * 
-	 * @see com.lucasbt.laboratorio.enums.typesafe.TipoConta#isCorrente()
-	 */
-	@Override
-	public Boolean isCorrente() {
-		return this.equals(CORRENTE);
-	}
+   /**
+    * (Ver Javadoc da super classe)
+    * 
+    * @see com.lucasbt.laboratorio.dinamizacaoenums.TipoConta#isCorrente()
+    */
+   @Override
+   public Boolean isCorrente()
+   {
+      return this.equals(CORRENTE);
+   }
 
-	/**
-	 * (Ver Javadoc da super classe)
-	 * 
-	 * @see com.lucasbt.laboratorio.enums.typesafe.TipoConta#isPoupanca()
-	 */
-	@Override
-	public Boolean isPoupanca() {
-		return this.equals(POUPANCA);
-	}
+   /**
+    * (Ver Javadoc da super classe)
+    * 
+    * @see com.lucasbt.laboratorio.dinamizacaoenums.TipoConta#isPoupanca()
+    */
+   @Override
+   public Boolean isPoupanca()
+   {
+      return this.equals(POUPANCA);
+   }
 
-	/**
-	 * (Ver Javadoc da super classe)
-	 * 
-	 * @see com.lucasbt.laboratorio.enums.typesafe.TipoConta#isSalario()
-	 */
-	@Override
-	public Boolean isSalario() {
-		return this.equals(SALARIO);
-	}
+   /**
+    * (Ver Javadoc da super classe)
+    * 
+    * @see com.lucasbt.laboratorio.dinamizacaoenums.TipoConta#isSalario()
+    */
+   @Override
+   public Boolean isSalario()
+   {
+      return this.equals(SALARIO);
+   }
 
 }
 

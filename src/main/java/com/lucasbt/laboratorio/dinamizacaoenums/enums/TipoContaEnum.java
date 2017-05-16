@@ -1,21 +1,21 @@
 /**
  * 
  */
-package com.lucasbt.laboratorio.enums.enumsdirect;
+package com.lucasbt.laboratorio.dinamizacaoenums.enums;
 
-import com.lucasbt.laboratorio.enums.typesafe.TipoContaPersonalizado;
+import com.lucasbt.laboratorio.dinamizacaoenums.TipoConta;
 
 /**
  * @author lucas
  *
  */
-public enum TipoContaPersonalizadoEnum implements TipoContaPersonalizado {
-	CORRENTE(1, "Corrente"), POUPANCA(2, "Poupança"), SALARIO(3, "Salário"),BENEFICIO(9, "Benefício");
+public enum TipoContaEnum implements TipoConta<Integer> {
+	CORRENTE(1, "Corrente"), POUPANCA(2, "Poupança"), SALARIO(3, "Salário");
 
 	protected String nome;
 	protected Integer valor;
 
-	private TipoContaPersonalizadoEnum(Integer valor, String nome) {
+	private TipoContaEnum(Integer valor, String nome) {
 		this.valor = valor;
 		this.nome = nome;
 	}
@@ -68,10 +68,5 @@ public enum TipoContaPersonalizadoEnum implements TipoContaPersonalizado {
 	@Override
 	public Boolean isSalario() {
 		return this.equals(SALARIO);
-	}
-
-	@Override
-	public Boolean isBeneficio() {
-		return this.equals(BENEFICIO);
 	}
 }
