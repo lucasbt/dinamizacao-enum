@@ -4,14 +4,14 @@
 */
 package com.lucasbt.laboratorio.enums.typesafe;
 
-import java.io.Serializable;
+import com.lucasbt.laboratorio.enums.DominioEnum;
 
 /**
 * Descrição do Fonte
 * 
 * @author <Mês por extenso>/2017: <Nome Completo do Implementador> <DD>
 */
-public interface TipoConta extends DominioEnum<Integer>, Serializable
+public interface TipoConta<T> extends DominioEnum<T>
 {
 
    Boolean isCorrente();

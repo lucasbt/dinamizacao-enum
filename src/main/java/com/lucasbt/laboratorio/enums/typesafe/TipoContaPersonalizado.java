@@ -1,23 +1,17 @@
-/**
- * 
- */
+/*
+* Fóton Informática S.A.
+* Criação : 15 de mai de 2017
+*/
 package com.lucasbt.laboratorio.enums.typesafe;
 
 /**
- * @author lucas
- *
- */
-public class TipoContaPersonalizado extends TipoContaImpl {
-	private static final long serialVersionUID = 1L;
-	
-	public TipoContaImpl CORRENTE = new TipoContaImpl(1,"Conta Corrente");
-	
-	private TipoContaPersonalizado(Integer valor, String descricao) {
-		super(valor, descricao);
-		
-	}
+* Descrição do Fonte
+* 
+* @author <Mês por extenso>/2017: <Nome Completo do Implementador> <DD>
+*/
+public interface TipoContaPersonalizado extends TipoConta<Integer>
+{
 
-	
-
-
+   Boolean isBeneficio();
+   
 }

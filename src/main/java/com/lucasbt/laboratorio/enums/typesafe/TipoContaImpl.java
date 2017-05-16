@@ -1,83 +1,54 @@
 
 package com.lucasbt.laboratorio.enums.typesafe;
 
+import com.lucasbt.laboratorio.enums.AbstractDominioEnum;
+
 /**
  * Descrição do Fonte
  * 
  * @author <Mês por extenso>/2017: <Nome Completo do Implementador>
  *         <DD>
  */
-public class TipoContaImpl implements TipoConta
-{
+public class TipoContaImpl extends AbstractDominioEnum<Integer> implements TipoConta<Integer> {
 
-   private static final long serialVersionUID = 1L;
-   private Integer valor;
+	private static final long serialVersionUID = 1L;
+	public static final TipoConta<?> CORRENTE = new TipoContaImpl(1, "Conta Corrente");
+	public static final TipoConta<?> POUPANCA = new TipoContaImpl(2, "Conta Poupança");
+	public static final TipoConta<?> SALARIO = new TipoContaImpl(3, "Conta Salário");
 
-   /**
-    * (Ver Javadoc da super classe)
-    * 
-    * @see com.lucasbt.laboratorio.enums.typesafe.DominioEnum#getValor()
-    */
-   @Override
-   public Integer getValor()
-   {
-      return this.valor;
-   }
+	protected TipoContaImpl(Integer valor, String nome) {
+		super(valor,nome);
+	}
 
-   /**
-    * (Ver Javadoc da super classe)
-    * 
-    * @see com.lucasbt.laboratorio.enums.typesafe.DominioEnum#getNome()
-    */
-   @Override
-   public String getNome()
-   {
-      return null;
-   }
+	/**
+	 * (Ver Javadoc da super classe)
+	 * 
+	 * @see com.lucasbt.laboratorio.enums.typesafe.TipoConta#isCorrente()
+	 */
+	@Override
+	public Boolean isCorrente() {
+		return this.equals(CORRENTE);
+	}
 
-   /**
-    * (Ver Javadoc da super classe)
-    * 
-    * @see java.lang.Comparable#compareTo(java.lang.Object)
-    */
-   @Override
-   public int compareTo(Integer o)
-   {
-      return 0;
-   }
+	/**
+	 * (Ver Javadoc da super classe)
+	 * 
+	 * @see com.lucasbt.laboratorio.enums.typesafe.TipoConta#isPoupanca()
+	 */
+	@Override
+	public Boolean isPoupanca() {
+		return this.equals(POUPANCA);
+	}
 
-   /**
-    * (Ver Javadoc da super classe)
-    * 
-    * @see com.lucasbt.laboratorio.enums.typesafe.TipoConta#isCorrente()
-    */
-   @Override
-   public Boolean isCorrente()
-   {
-      return null;
-   }
-
-   /**
-    * (Ver Javadoc da super classe)
-    * 
-    * @see com.lucasbt.laboratorio.enums.typesafe.TipoConta#isPoupanca()
-    */
-   @Override
-   public Boolean isPoupanca()
-   {
-      return null;
-   }
-
-   /**
-    * (Ver Javadoc da super classe)
-    * 
-    * @see com.lucasbt.laboratorio.enums.typesafe.TipoConta#isSalario()
-    */
-   @Override
-   public Boolean isSalario()
-   {
-      return null;
-   }
+	/**
+	 * (Ver Javadoc da super classe)
+	 * 
+	 * @see com.lucasbt.laboratorio.enums.typesafe.TipoConta#isSalario()
+	 */
+	@Override
+	public Boolean isSalario() {
+		return this.equals(SALARIO);
+	}
 
 }
 
@@ -86,7 +57,8 @@ public class TipoContaImpl implements TipoConta
 // *
 // * @author lucas
 // */
-// public class TipoContaImpl implements DominioEnum<TipoContaImpl,Integer>, Serializable {
+// public class TipoContaImpl implements DominioEnum<TipoContaImpl,Integer>,
+/// Serializable {
 // private static final long serialVersionUID = 1L;
 // private final Set<TipoContaImpl> valores;
 //
