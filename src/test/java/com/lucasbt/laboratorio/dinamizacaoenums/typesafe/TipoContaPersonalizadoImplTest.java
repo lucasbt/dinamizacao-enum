@@ -11,6 +11,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.junit.MockitoJUnitRunner;
 import com.lucasbt.laboratorio.dinamizacaoenums.TipoConta;
+import com.lucasbt.laboratorio.dinamizacaoenums.TipoContaPersonalizado;
 
 /**
  * @author lucas

@@ -4,6 +4,8 @@
 
 package com.lucasbt.laboratorio.dinamizacaoenums.typesafe;
 
+import com.lucasbt.laboratorio.dinamizacaoenums.TipoContaPersonalizado;
+
 /**
  * @author lucas
  */

@@ -3,7 +3,7 @@
  */
 package com.lucasbt.laboratorio.dinamizacaoenums.enums;
 
-import com.lucasbt.laboratorio.dinamizacaoenums.typesafe.TipoContaPersonalizado;
+import com.lucasbt.laboratorio.dinamizacaoenums.TipoContaPersonalizado;
 
 /**
  * @author lucas

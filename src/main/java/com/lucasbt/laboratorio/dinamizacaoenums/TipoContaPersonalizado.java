@@ -2,9 +2,7 @@
 * Fóton Informática S.A.
 * Criação : 15 de mai de 2017
 */
-package com.lucasbt.laboratorio.dinamizacaoenums.typesafe;
-
-import com.lucasbt.laboratorio.dinamizacaoenums.TipoConta;
+package com.lucasbt.laboratorio.dinamizacaoenums;
 
 /**
 * Descrição do Fonte
